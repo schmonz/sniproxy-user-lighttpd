@@ -14,4 +14,4 @@ User-controlled websites that are easy to get up and running, including HTTPS wi
 
 Using the shared config files, listening for HTTPS necessarily also means forcing HTTP to HTTPS. A site might want to opt out of that, instead listening on both and responding on either.
 
-Using the shared config files, HTTP requests are always redirected to HTTPS at the value of `sitecanonical`. (Examples: `http://dieschleier.de` redirects to `https://theschleiers.com` as do `http://dieschleier.com` and `http://השליירים.com`). A site might want to have additional names which, if requested, are preserved.
+Using the shared config files, HTTP requests are always redirected to HTTPS at the value of `sitecanonical` (unless specially handled in `hosted-ssl.conf`). A site might want to define its own additional names which, if requested, are preserved.
